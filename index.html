@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیگ فوتبال خانوادگی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <h1>⚽ لیگ فوتبال خانوادگی</h1>
+
+    <!-- بخش ثبت تیم‌ها -->
+    <div class="team-section">
+        <h2>۱. ثبت تیم‌ها</h2>
+        <div class="input-group">
+            <input type="text" id="teamNameInput" placeholder="نام تیم یا عضو خانواده">
+            <button id="addTeamBtn">➕ افزودن تیم</button>
+        </div>
+        <div id="teamsContainer" class="teams-list">
+            <!-- تیم‌ها به صورت تگ نمایش داده می‌شوند -->
+        </div>
+        <div class="btn-group" style="margin-top: 15px;">
+            <button id="generateScheduleBtn" class="danger-btn">📅 تولید برنامه بازی‌ها (رفت و برگشت)</button>
+            <button id="resetAllBtn" style="background:#94a3b8;">🔄 پاک کردن همه داده‌ها</button>
+        </div>
+    </div>
+
+    <!-- بخش بازی‌ها (برنامه و ثبت نتیجه) -->
+    <div class="matches-section">
+        <h2>۲. برنامه و نتایج بازی‌ها</h2>
+        <div id="matchesList" class="matches-list">
+            <!-- آیتم‌های بازی‌ها در اینجا قرار می‌گیرند -->
+        </div>
+    </div>
+
+    <!-- بخش جدول رده‌بندی -->
+    <div class="standings-section">
+        <h2>📊 جدول رده‌بندی</h2>
+        <table class="standings-table" id="standingsTable">
+            <thead>
+                <tr>
+                    <th>تیم</th>
+                    <th>بازی</th>
+                    <th>برد</th>
+                    <th>مساوی</th>
+                    <th>باخت</th>
+                    <th>گل زده</th>
+                    <th>گل خورده</th>
+                    <th>تفاضل</th>
+                    <th>امتیاز</th>
+                </tr>
+            </thead>
+            <tbody id="standingsBody">
+                <!-- ردیف‌های جدول -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
